@@ -136,3 +136,8 @@ CORS_ALLOW_ALL_ORIGINS = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 USE_X_FORWARDED_HOST = True
 X_FRAME_OPTIONS = 'ALLOWALL'
+
+# REST Framework
+from .rest_settings import get_rest_framework_settings  # noqa: E402
+
+REST_FRAMEWORK = get_rest_framework_settings()
